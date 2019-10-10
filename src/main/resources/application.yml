@@ -7,16 +7,3 @@ spring:
 server:
   port: 8761
   address: 192.168.1.5
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-  instance:
-    prefer-ip-address: true
-    appname: eureka
-logging:
-  level:
-    com:
-      netflix:
-        eureka: false
-        discovery: false

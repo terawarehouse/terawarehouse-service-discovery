@@ -1,0 +1,16 @@
+eureka:
+  instance:
+    hostname: ${server.address} # not needed if machine knows it's own hostname
+    prefer-ip-address: true
+    appname: eureka
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+logging:
+  level:
+    com:
+      netflix:
+        eureka: false
+        discovery: false
