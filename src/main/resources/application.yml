@@ -9,9 +9,10 @@ server:
   port: 8761
 
 eureka:
+  environment: ${spring.profiles.active}
   client:
-    register-with-eureka: true
-    fetch-registry: true
+    register-with-eureka: false
+    fetch-registry: false
   instance:
     prefer-ip-address: true
     appname: eureka
