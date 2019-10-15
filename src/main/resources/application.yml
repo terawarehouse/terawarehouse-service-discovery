@@ -1,13 +1,11 @@
 spring:
   application:
-    name: terawarehouse-service-discovery
+    name: service-discovery
   profiles:
     active:
     - ${spring.profiles.active}
-    
 server:
   port: 8761
-
 eureka:
   environment: ${spring.profiles.active}
   client:
