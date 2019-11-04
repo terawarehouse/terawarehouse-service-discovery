@@ -4,5 +4,10 @@ spring:
   profiles:
     active:
     - ${spring.profiles.active}
+  cloud:
+    config:
+      enabled: true
+      uri: http://192.168.1.101:800
+      fail-fast: true
 server:
   port: 8761
