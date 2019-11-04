@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: service-discovery
+  profiles:
+    active:
+    - ${spring.profiles.active}
+server:
+  port: 8761
