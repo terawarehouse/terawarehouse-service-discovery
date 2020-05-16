@@ -10,6 +10,13 @@ Is a microservice that is a part of the Catalog and Sellout Management System.
  - It is powered by Spring Cloud that provides the microservice registry server functionality.
  - It is using Eureka as the client server discovery.
 
+## Dockerized
+
+```
+docker build -t com.terawarehouse/service-discovery-server .
+docker run -d -p 8000:8000 com.terawarehouse/service-discovery-server
+```
+
 ## Repositories
 
  - https://github.com/terawarehouse
