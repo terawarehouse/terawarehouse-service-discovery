@@ -14,8 +14,10 @@ Is a microservice that is a part of the Catalog and Sellout Management System.
 
 ```
 docker build -t com.terawarehouse/service-discovery-server .
-docker run -d -p 8000:8000 com.terawarehouse/service-discovery-server
+docker run -d -p 8761:8761 com.terawarehouse/service-discovery-server
 ```
+
+Service discovery should be accessible at For example: http://192.168.1.101:8761
 
 ## Repositories
 
