@@ -9,15 +9,20 @@ Is a microservice that is a part of the Catalog and Sellout Management System.
 
  - It is powered by Spring Cloud that provides the microservice registry server functionality.
  - It is using Eureka as the client server discovery.
+ 
+## Application Configuration
+
+To use either configuration instance1 or intance2 in src/main/resources folder set the value of spring.profiles.active in your environment variable. 
+For instance if we will be using instance1 then spring.profiles.active=instance1.
 
 ## Dockerized
 
 ```
-docker build -t com.terawarehouse/service-discovery-server .
-docker run -d -p 8761:8761 com.terawarehouse/service-discovery-server
+docker build -t czetsuya/terawarehouse-service-discovery .
+docker run -d -p 8761:8761 czetsuya/terawarehouse-service-discovery
 ```
 
-Service discovery should be accessible at For example: http://192.168.1.101:8761
+Service discovery should be accessible at For example: http://localhost:8761
 
 ## Repositories
 
